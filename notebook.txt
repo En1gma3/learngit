@@ -18,10 +18,15 @@ step3 : 打开github 设置自己account的ssd密钥
 git clone git@github.com:En1gma3/learngit.git
 
 设置全局用户名和邮箱
-git globall
+git globall --user.name  "*** "
+git globall --user.email  "***"
+
 提交文件
 git add <file name>
 git commit <file name> -m "****** "
+
+更新服务器
+git push -u origin master
 
 创建与合并分支
 查看分支： git branch
