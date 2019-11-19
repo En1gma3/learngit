@@ -1,0 +1,24 @@
+2019.11.19 git learning
+创建与合并分支
+查看分支： git branch
+创建分支： git branch <name>
+切换分支： git switch <name> or git checkout -b <name>
+创建并切换分支： git switch -c <name> or git checkout -b <name>
+合并到当前分支： git merge <name>
+删除分支： git branch -d <name>
+ 
+利用单行显示log git log --graph --pretty=oneline --abbrev-commit
+
+分支管理策略
+合并时尽量使用noff策略保留合并历史 
+git merge --no-ff -m " **** " <name>
+
+BUG分支
+修改其他BUG暂存当前分支
+git stash 
+查看当前stash list
+git stash list
+一是用git stash apply恢复，但是恢复后，stash内容并不删除，你需要用git stash drop来删除；
+另一种方式是用git stash pop，恢复的同时把stash内容也删了：
+
+恢复指定的stash $ git stash apply stash@{0}
