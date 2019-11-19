@@ -1,4 +1,9 @@
 2019.11.19 git learning
+2019.11.19
+提交文件
+git add <file name>
+git commit <file name> -m "****** "
+
 创建与合并分支
 查看分支： git branch
 创建分支： git branch <name>
@@ -22,3 +27,4 @@ git stash list
 另一种方式是用git stash pop，恢复的同时把stash内容也删了：
 
 恢复指定的stash $ git stash apply stash@{0}
+
