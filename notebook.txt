@@ -1,5 +1,14 @@
 2019.11.19 git learning
 2019.11.19
+github 建立本地库之间的连接
+step1 : 检查ssh文件有无 若无step2
+
+step2 : ssh-keygen -t "<qqq@emai.coml>"
+
+step3 : 打开github 设置自己account的ssd密钥
+
+对远程仓库文件进行克隆
+
 提交文件
 git add <file name>
 git commit <file name> -m "****** "
